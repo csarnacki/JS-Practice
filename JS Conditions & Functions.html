@@ -1,0 +1,112 @@
+<! DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Condtionals and Functions</h2>
+
+<p id="number"></p>
+
+<script>
+let num = 6;
+
+// Conditional that outputs result based on whether the variable is 6 or another number
+if (num == 6) {
+  mystery_num = "The mystery number is six.";
+} else {
+  mystery_num = "The mystery number is something else.";
+}
+
+document.getElementById("number").innerHTML = mystery_num;
+</script>
+
+<p id="week"></p>
+
+<script>
+let day = "Sunday";
+
+// Conditional that outputs the day of the week according to the variable
+if (day == "Monday") {
+  dayOfWeek = "It's the beginning of the week.";
+} else if (day == "Tuesday") {
+  dayOfWeek = "It's still the beginning of the week but not as bad as Monday.";
+} else if (day == "Wednesday") {
+  dayOfWeek = "It's the middle of the week.";
+} else if (day == "Thursday") {
+  dayOfWeek = "It's getting close to the weekend.";
+} else if (day == "Friday") {
+  dayOfWeek = "The weekend is nearly here! I can't wait!";
+} else if (day == "Saturday") {
+  dayOfWeek = "Horray! The weekend is finally here! I'm so excited!";
+} else if (day == "Sunday") {
+  dayOfWeek = "It's still the weekend but I have to go back to work tomorrow.";
+} else {
+  dayOfWeek = "Please enter a valid day";
+}
+
+document.getElementById("week").innerHTML = dayOfWeek;
+</script>
+
+<p id="temperature"></p>
+
+<script>
+let temp = "hot";
+
+// Switch that outputs the result of the weather based on the variable
+switch (temp) {
+  case "hot":
+    weather = "It's really hot and sunny out here! Better grab some shorts and sunglasses.";
+	break;
+  case "warm":
+    weather = "It's pretty warm out today so I can wear a t shirt and shorts.";
+	break;
+  case "chilly":
+    weather = "Brrr! It sure is getting cold and windy out gere. I should put a jacket on.";
+	break;
+  case "cold":
+    weather = "It's freezing out here! I need s scarf and gloves to stay warm!";
+	break;
+  case "rainy":
+	weather = "I need to get an umbrella and rain boots if I want to go outside.";
+	break;
+  default:
+    weather = "I think I'll just stay inside today.";
+}
+
+document.getElementById("temperature").innerHTML = weather;
+</script>
+
+<p id="ex1"></p>
+
+<script>
+function favoriteDrink() {
+  return ("Root Beer");
+}
+
+// Returns the output of the function when it is declared
+document.getElementById("ex1").innerHTML = favoriteDrink();
+</script>
+
+<p id="ex2"></p>
+
+<script>
+function myPet(name) {
+  return ("I have a dog and her name is " + name + " and she is a black lab.");
+}
+
+// Returns the output of the function when a parameter value is added
+document.getElementById("ex2").innerHTML = myPet("Pepper");
+</script>
+
+<p id="ex3"></p>
+
+<script>
+function greet(name = "Stranger") {
+   return ("Welcome " + name);
+}
+
+// Returns either a desired output based on the parameter value or a default output if there is no parameter value
+document.getElementById("ex3").innerHTML = greet();
+</script>
+
+</body>
+</html>  

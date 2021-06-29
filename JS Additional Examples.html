@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<label for="check">Checkbox:</label>
+<input type="checkbox" id="check" onclick="myFunction()">
+
+<p id="text" style="display:none">Checkbox is checked!</p>
+
+<script>
+// Creates text that displays when the box has been checked
+
+function myFunction() {
+  const checkBox = document.getElementById("check");
+  const text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<button onclick="myFunction()">Change this document</button>
+
+<script>
+// Changes the current page when the button is clicked
+
+function myFunction() {
+  location.replace("https://www.google.com/")
+}
+</script>
+
+<p id="demo"></p>
+
+<script>
+// Allows a form to display from the corner and then be hidden again when clicked
+
+function openForm() {
+  document.getElementById("demo").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("demo").style.display = "none";
+}
+</script>
+
+</body>
+</html>

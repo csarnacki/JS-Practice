@@ -1,0 +1,62 @@
+<! DOCTYPE html>
+<html>
+<body>
+
+<p id="array1"></p>
+
+<script>
+const favoriteSports = ["baseball", "football", "basketball"];
+
+// Returns the values of the array
+document.getElementById("array1").innerHTML = favoriteSports;
+</script>
+
+<p id="array2"></p>
+
+<script>
+let groceryList = ["milk", "bread", "yogurt", "cheese", "corn"];
+
+groceryList[5] = "broccoli";
+
+// Returns the array with the new value "broccoli" added to the end
+document.getElementById("array2").innerHTML = groceryList;
+</script>
+
+<p id="array3"></p>
+
+<script>
+let days = ["Monday", "Tuesday", "Wednesday"];
+
+// Returns the number of values within the array
+document.getElementById("array3").innerHTML = days.length;
+</script>
+
+<p id="array4"></p>
+
+<script>
+const videoGames = ["Grand Theft Auto", "Red Dead Redemption", "Call of Duty", "Destiny"];
+
+// Adds on the two new values, "Ark Survival Evolved" and "Watch Dogs" to the array
+videoGames.push("Ark Survival Evolved", "Watch Dogs");
+// Removes the last value of the array
+videoGames.pop();
+
+// Returns the array showing "Ark Survival Evolved" is now part of the array and "Watch Dogs" has been removed
+document.getElementById("array4").innerHTML = videoGames;
+</script>
+
+<p id="loop1"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i <= 5; i++) {
+  text += "My number is " + i + "<br>";
+}
+
+// Creates a for loop that counts up to 5 and then terminates
+document.getElementById("loop1").innerHTML = text;
+</script>
+
+</body>
+</html> 
