@@ -1,5 +1,4 @@
 # JS-Practice
-JS Practice
 
 This folder is all about my practice so far with JavaScript and JSON. There are two files that focus solely on JavaScript and my extent of understanding it.
 
